@@ -1,0 +1,56 @@
+#sizelist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+	background-color: #4343B4C;
+	opacity: .8;
+}
+
+#saucelist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+}
+
+#crustlist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+}
+
+#cheeselist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+}
+
+#meatlist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+}
+
+#veggielist {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+	text-shadow: 2px 2px 8px #FF0000;
+	font-size: 75px;
+	font-color: #fff;
+}
+
+h4 {
+	background-color:lightblue;
+	border-radius: span;
+	text-align: center;
+}
+
+body {
+	background-image: url('../img/pizzaInOven.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

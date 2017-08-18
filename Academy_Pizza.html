@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Academy Pizza!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/academyPizza_style.css">
+  </head>
+  <body>
+<h2>ACADEMY PIZZA!</h2>
+    <!--Menu List-->
+    <div class="container">
+		<div class="row">
+			<div class="col" id="sizelist">
+				<h4>Size:</h4>
+				<div class="btn-group" data-toggle="buttons">
+					<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary">
+								<input type="radio" name="size" value="Personal Pizza" autocomplete="off"> Personal Pizza
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="size" value="Medium Pizza" autocomplete="off"> Medium Pizza
+							</label>					
+							<label class="btn btn-primary active">
+								<input type="radio" name="size" value="Large Pizza" autocomplete="off" checked> Large Pizza
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="size" value="Extra Large Pizza" autocomplete="off"> Extra Large Pizza
+							</label>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col" id="saucelist">
+				<h4>Sauce:</h4>
+				<div class="btn-group" data-toggle="buttons">
+					<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary active">
+								<input type="radio" name="sauce" value="Marinara Sauce" autocomplete="off" checked> Marinara Sauce
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="sauce" value="White Sauce" autocomplete="off"> White Sauce
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="sauce" value="BBQ" autocomplete="off"> Barbeque Sauce
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="sauce" value="No Sauce" autocomplete="off"> No Sauce
+							</label>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col" id="crustlist">
+				<h4>Crust:</h4>
+				<div class="btn-group" data-toggle="buttons">
+					<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary active">
+								<input type="radio" name="crust" value="Plain Crust" autocomplete="off" checked> Plain Crust
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="crust" value="Garlic Butter Crust" autocomplete="off"> Garlic Butter Crust
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="crust" value="Cheesed Stuffed Crust" autocomplete="off"> Cheesed Stuffed Crust
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="crust" value="Spicey Crust" autocomplete="off"> Spicy Crust
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="crust" value="House Special Crust" autocomplete="off"> House Special Crust
+							</label>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="cheeselist">
+				<h4>Cheese:</h4>
+				<div class="btn-group" data-toggle="buttons">
+					<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary active">
+								<input type="radio" name="cheese" value="Regular Cheese" autocomplete="off" checked> Regular Cheese
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="cheese" value="No Cheese"  autocomplete="off"> No Cheese
+							</label>					
+							<label class="btn btn-primary">
+								<input type="radio" name="cheese" value="Extra Cheese"  autocomplete="off"> Extra Cheese
+							</label>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col" id="meatlist">
+				<h4>Meats:</h4>
+				<div class="btn-group" data-toggle="buttons">
+					<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="Pepperoni" autocomplete="off"> Pepperoni
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="Sausage" autocomplete="off"> Sausage
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="Canadian Bacon" autocomplete="off"> Canadian Bacon
+							</label>
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="Ground Beef" autocomplete="off"> Ground Beef
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="Anchovy" autocomplete="off"> Anchovy
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="meat" value="chicken" autocomplete="off"> Chicken
+							</label>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col" id="veggielist">
+				<h4>Veggies:</h4>
+				<ul class="list-unstyled">
+						<li>
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Tomatoes" autocomplete="off"> Tomatoes
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Onions" autocomplete="off"> Onions
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Olives" autocomplete="off"> Olives
+							</label>
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Green Peppers" autocomplete="off"> Green Peppers
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Mushrooms" autocomplete="off"> Mushrooms
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Pineapple" autocomplete="off"> Pineapple
+							</label>
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Spinach" autocomplete="off"> Spinich
+							</label>					
+							<label class="btn btn-primary">
+								<input type="checkbox" name="veggie" value="Jalapeno" autocomplete="off"> Jalapeno
+							</label>
+						</li>	
+					</ul>
+			</div>
+		</div>
+		
+		<!--Submit Order--->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-3"><center>Submit Your Order!</center></h1>
+				<div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+				<button type="button" onclick="getReciept()" class="btn btn-lg btn-block btn-outline-success">Submit</button>
+				<button type="button" class="btn btn-lg btn-block btn-outline-danger">Restart Order</button>
+			</div>
+		</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	</div> 
+  <!--Required Bootstrap Code-->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+  <script>
+
+  
+  function getReciept() {
+	var text1 = "<h3>You Ordered:</h3>";
+	var runningTotal = 0;
+	var sizeTotal = 0;
+	var sizeArray = document.getElementsByName("size");
+	for (var i = 0; i < sizeArray.length; i++) {
+		if (sizeArray[i].checked) {
+			var selectedSize = sizeArray[i].value;
+			text1 = text1+selectedSize+"<br>";
+		}
+	}
+	if (selectedSize === "Personal Pizza") {
+		sizeTotal = 6;
+	} else if (selectedSize === "Medium Pizza") {
+		sizeTotal = 10;
+	} else if (selectedSize === "Large Pizza") {
+		sizeTotal = 14;
+	} else if (selectedSize === "Extra Large Pizza") {
+		sizeTotal = 16;
+	}
+	runningTotal = sizeTotal;
+
+	getMeat(runningTotal,text1);
+	
+	
+};
+	
+	function getMeat(runningTotal,text1) {
+	var meatTotal = 0;
+	var selectedMeat = [];
+	var meatArray = document.getElementsByName("meat");
+	for (var j = 0; j < meatArray.length; j++) {
+		if (meatArray[j].checked) {
+			selectedMeat.push(meatArray[j].value);
+			console.log("selected meat item: ("+meatArray[j].value+")");
+			text1 = text1+meatArray[j].value+"<br>";
+		}
+	}
+	var meatCount = selectedMeat.length;
+	if (meatCount > 1) {
+		meatTotal = (meatCount - 1);
+	} else {
+		meatTotal = 0;
+	}
+	runningTotal = (runningTotal + meatTotal);
+	
+	getVeggie(runningTotal,text1);
+};	
+  
+	function getVeggie(runningTotal,text1) {
+	var veggieTotal = 0;
+	var selectedVeggie = [];
+	var veggieArray = document.getElementsByName("veggie");
+	for (var k = 0; k < veggieArray.length; k++) {
+		if (veggieArray[k].checked) {
+			selectedVeggie.push(veggieArray[k].value);
+			console.log("selected veggie item: ("+veggieArray[k].value+")");
+			text1 = text1+veggieArray[k].value+"<br>";
+		}
+	}
+	var veggieCount = selectedVeggie.length;
+	if (veggieCount > 1) {
+		veggieTotal = (veggieCount - 1);
+	} else {
+		veggieTotal = 0;
+	}
+	runningTotal = (runningTotal + veggieTotal);
+	
+	getSauce(runningTotal,text1);
+	
+};	
+  
+	function getSauce(runningTotal, text1) {
+	var sauceTotal = 0;
+	var sauceArray = document.getElementsByName("sauce");
+	for (var g = 0; g < sauceArray.length; g++) {
+		if (sauceArray[g].checked) {
+			var selectedSauce = sauceArray[g].value;
+			text1 = text1+selectedSauce+"<br>";
+		}
+	}
+	if (selectedSauce === "Marinara Sauce") {
+		sauceTotal = 0;
+	} else if (selectedSauce === "White Sauce") {
+		sauceTotal = 0;
+	} else if (selectedSauce === "BBQ") {
+		sauceTotal = 0;
+	} else if (selectedSauce === "No Sauce") {
+		sauceTotal = 0;
+	}
+	runningTotal = (runningTotal + sauceTotal);
+
+	getCrust(runningTotal,text1);
+};  
+
+function getCrust(runningTotal, text1) {
+	var crustTotal = 0;
+	var crustArray = document.getElementsByName("crust");
+	for (var p = 0; p < crustArray.length; p++) {
+		if (crustArray[p].checked) {
+			var selectedCrust = crustArray[p].value;
+			text1 = text1+selectedCrust+"<br>";
+		}
+	
+	}
+	if (selectedCrust === "Plain Crust") {
+		crustTotal = 0;
+	} else if (selectedCrust === "Garlic Butter Crust") {
+		crustTotal = 0;
+	} else if (selectedCrust === "Cheesed Stuffed Crust") {
+		crustTotal = 3;
+	} else if (selectedCrust === "Spicy Crust") {
+		crustTotal = 0;
+	} else if (selectedCrust === "house Special Crust") {
+		crustTotal = 0;
+	}
+	runningTotal = (runningTotal + crustTotal);
+
+	getCheese(runningTotal,text1);
+
+};  
+
+  function getCheese(runningTotal, text1) {
+	var cheeseTotal = 0;
+	var cheeseArray = document.getElementsByName("cheese");
+	for (var w = 0; w < cheeseArray.length; w++) {
+		if (cheeseArray[w].checked) {
+			var selectedCheese = cheeseArray[w].value;
+			text1 = text1+selectedCheese+"<br>";
+		}
+	
+	}
+	if (selectedCheese === "Regular Cheese") {
+		cheeseTotal = 0;
+	} else if (selectedCheese === "No Cheese") {
+		cheeseTotal = 0;
+	} else if (selectedCheese === "Extra Cheese") {
+		cheeseTotal = 3;
+	}
+	runningTotal = (runningTotal + cheeseTotal);
+
+	
+	document.getElementById("showText").innerHTML=text1;
+	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";  
+
+};
+  
+  
+  
+  
+
+  
+  
+  </script>
+  
+  </body>
+
+</html>
